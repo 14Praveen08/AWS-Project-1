@@ -1,0 +1,14 @@
+<table class="table container-fluid table-striped">
+  <thead>
+  <tr class="row">
+    <th class="col-4 s-no">#</th>
+    <th class="col">Name</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="row" *ngFor="let object of objects; index as i">
+    <th class="col-4 s-no">{{ i + 1 }}</th>
+    <td class="col">{{ object.name }}</td>
+  </tr>
+  </tbody>
+</table>
